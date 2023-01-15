@@ -1,0 +1,17 @@
+.wrap {
+  width: 300px;
+  margin: auto;
+}
+.header {
+  font-family: "Gowun Dodum", sans-serif;
+  margin-bottom: 20px;
+  background-image: url("https://www.ancient-origins.net/sites/default/files/field/image/Agesilaus-II-cover.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  color: #fff;
+  padding-top: 40px;
+}
