@@ -20,11 +20,10 @@ movies = soup.select('#old_content > table > tbody > tr')
 
 # movies (tr들) 의 반복문을 돌리기
 for movie in movies:
-    # movie 안에 a 가 있으면,
     # (조건을 만족하는 첫 번째 요소, 없으면 None을 반환한다.)
     a_tag = movie.select_one('td.title > div > a')
     point = movie.select_one('td.point')
     rank = movie.select_one('img')
-    if a_tag is not None:
-        # a의 text를 찍어본다.
-        print(rank, a_tag.text, point.text)
+
+    if rank is not None:
+        print(rank['alt'], a_tag.text, point.text)
